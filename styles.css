@@ -3,7 +3,6 @@ body {
   color: #fbe0ae;
   padding-left: 200px;
   padding-right: 200px;
-  font-size: 26px;
 }
 
 /* header */
@@ -19,6 +18,7 @@ a {
 
 /* general info */
 .info {
+  float: left;
 }
 
 /* ingredients */
@@ -54,7 +54,7 @@ h1 {
 
 /* section heading */
 h4 {
-  text-align: left;
+  text-align: center;
   border-bottom: solid 1px #fbe0ae;
 }
 
@@ -94,7 +94,7 @@ li {
 
 /* recipe image */
 .image {
-  width: 24%;
+  width: 50%;
   float: right;
   border-radius: 2%;
 }
