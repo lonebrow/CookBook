@@ -1,0 +1,105 @@
+body {
+  background-color: #1d1c1c;
+  color: #fbe0ae;
+  padding-left: 200px;
+  padding-right: 200px;
+  font-size: 26px;
+}
+
+/* header */
+header {
+  /*aligns with title*/
+  margin-bottom: -50px;
+}
+
+/* nav links */
+a {
+  color: #ffc760;
+}
+
+/* general info */
+.info {
+}
+
+/* ingredients */
+.ingredients {
+}
+
+/* directions */
+.directions {
+}
+
+/* notes */
+.notes {
+  text-align: center;
+}
+
+/* shared styles (border, etc.) */
+.ingredients,
+.directions,
+.notes,
+.info {
+  list-style-position: inside;
+  margin-bottom: 10px;
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+/* recipe title */
+h1 {
+  text-align: center;
+  border-bottom: solid 1px #fbe0ae;
+  color: #ffc760;
+}
+
+/* section heading */
+h4 {
+  text-align: left;
+  border-bottom: solid 1px #fbe0ae;
+}
+
+/* recipe description */
+h5 {
+  text-align: justify;
+}
+
+/* remove default bullets */
+ul,
+li {
+  list-style: none;
+}
+
+/* style for colored bullet */
+ul ::before {
+  content: "•";
+  color: #ffc760;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* style for color list */
+ol ::before {
+  content: counter(li);
+  color: #ffc760;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* increments numbered list */
+li {
+  counter-increment: li;
+}
+
+/* recipe image */
+.image {
+  width: 24%;
+  float: right;
+  border-radius: 2%;
+}
+
+/* recipe tags */
+.tags {
+  text-align: center;
+}
