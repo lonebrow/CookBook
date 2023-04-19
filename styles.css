@@ -9,7 +9,7 @@ body {
 /* header */
 header {
   /*aligns with title*/
-  margin-bottom: -50px;
+  margin-bottom: -60px;
 }
 
 /* nav links */
@@ -62,7 +62,7 @@ h4 {
 h5 {
   text-align: justify;
   font-weight: normal;
-  font-size: 22px
+  font-size: 22px;
 }
 
 /* remove default bullets */
@@ -111,4 +111,11 @@ li {
   margin-bottom: -50px;
   font-size: 16px;
   font-style: italic;
+}
+
+h2 {
+  text-align: right;
+  border: solid 1px #ffc760;
+  margin-bottom: -95px;
+  margin-left: 1012px;
 }
