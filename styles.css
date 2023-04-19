@@ -3,6 +3,7 @@ body {
   color: #fbe0ae;
   padding-left: 200px;
   padding-right: 200px;
+  font-size: 26px;
 }
 
 /* header */
@@ -18,7 +19,6 @@ a {
 
 /* general info */
 .info {
-  float: left;
 }
 
 /* ingredients */
@@ -54,13 +54,15 @@ h1 {
 
 /* section heading */
 h4 {
-  text-align: center;
+  text-align: left;
   border-bottom: solid 1px #fbe0ae;
 }
 
 /* recipe description */
 h5 {
   text-align: justify;
+  font-weight: normal;
+  font-size: 22px
 }
 
 /* remove default bullets */
@@ -92,9 +94,9 @@ li {
   counter-increment: li;
 }
 
-/* recipe image */
+/* recipe image (click for full-size) */
 .image {
-  width: 50%;
+  width: 27%;
   float: right;
   border-radius: 2%;
 }
@@ -102,4 +104,11 @@ li {
 /* recipe tags */
 .tags {
   text-align: center;
+}
+
+.clickimage {
+  margin-left: 970px;
+  margin-bottom: -50px;
+  font-size: 16px;
+  font-style: italic;
 }
