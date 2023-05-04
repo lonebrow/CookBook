@@ -22,6 +22,7 @@
     <main>
         <h1>Blog</h1>
 
+        <h6 class="tagline">Gastronomical Meditations</h6>
         <div class="blog-post">
             <h2>Example Blog Post</h2>
             <h5>John Doe | 12/31/1999</h5>
@@ -52,8 +53,8 @@
             <a class="readmore" href="#">Read More</a>
         </div>
 
-        <label for="more-posts-checkbox">More Posts</label>
-        <input type="checkbox" id="more-posts-checkbox">
+        <label for="more-posts-checkbox" class="more-posts-checkbox">More Posts</label>
+        <input type="checkbox" id="more-posts-checkbox" class="more-posts-checkbox">
 
         <div id="more-posts">
             <div class="blog-post">
@@ -101,6 +102,12 @@
             <a href="about.html">About Us</a>
             <a href="privacy.html">Privacy Policy</a>
             <a href="contact.html">Contact Us</a>
+            <!-- FORM REQUIREMENT #2 -->
+            <form class="newsletter">
+                <label>Newsletter:</label>
+                <input type="email" name="email" placeholder="Enter your email address">
+                <button type="submit">Sign Up</button>
+            </form>
         </nav>
         <p>&copy; 2023 RecipeRepo. All rights reserved.</p>
     </footer>

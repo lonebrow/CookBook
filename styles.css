@@ -126,7 +126,6 @@ footer {
 
 header {
   margin-top: -10px;
-  border-bottom: -20px;
   border-bottom: solid 1px #fbe0ae;
 }
 
@@ -347,12 +346,12 @@ li {
   display: none;
 }
 
-.blog label:hover {
+.more-posts-checkbox:hover {
   cursor: pointer;
   background-color: #ffa600;
 }
 
-.blog label {
+.more-posts-checkbox {
   color: #ffc760;
   margin-top: 25px;
   font-size: 1.5em;
@@ -401,6 +400,46 @@ tbody tr:nth-child(even) {
   background-color: #0a0a0a;
 }
 
+.tagline {
+  text-align: center;
+  margin-top: -20px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.blog .tagline {
+  margin-top: 35px;
+}
+
+header a {
+  text-decoration: none;
+}
+header a:hover {
+  text-decoration: underline;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: dotted underline;
+}
+
+a:hover {
+  text-decoration: solid underline;
+}
+
+.newsletter {
+  margin-top: 20px;
+  color: #fc7e00;
+}
+
 /* RESPONSIVE REQUIREMENT- FURTHER DEMONSTRATED IN PRESENTATION */
 @media (max-width: 1600px) {
   header {
@@ -437,7 +476,6 @@ tbody tr:nth-child(even) {
   body {
     width: auto;
     margin: auto;
-    padding: auto;
   }
   img {
     all: initial;
