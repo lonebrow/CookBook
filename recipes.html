@@ -7,16 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<style>
-    main p {
-        font-size: .8em;
-    }
 
-    main a {
-        font-size: .9em;
-    }
-
-</style>
+<!-- TABLE REQUIREMENT -->
 
 <body>
     <header>
@@ -24,59 +16,53 @@
             <a href="index.html">Home</a>
             <a href="blog.html">Blog</a>
             <a href="products.html">Products</a>
-            <a href="recipes.html"><b>Recipes</b></a>
+            <a href="recipes.html"><b>Recipes</b></a><br>
             <h2 class="names">Jesse Payton & Abhijay Rao</h2>
         </nav>
     </header>
-
-    <main>
+    <main class="recipes">
         <h1>Recipes</h1>
-        <div class="container3">
-            <div class="item">
-                <a href="chickenparm.html">
-                    <h3>Chicken Parmesan</h3>
-                </a>
-                <p><em><a href="#">Lunch</a> - <a href="#">Dinner</a> - <a href="#">American</a> - <a
-                            href="#">Italian</a></em></p>
-            </div>
-
-            <div class="item">
-                <a href="#">
-                    <h3>Huevos Rancheros</h3>
-                </a>
-                <p><em><a href="#">Breakfast</a> - <a href="#">Brunch</a> - <a href="#">Mexican</a></em></p>
-            </div>
-
-            <div class="item">
-                <a href="#">
-                    <h3>Scallion Oil Noodles</h3>
-                </a>
-                <p><em><a href="#">Dinner</a> - <a href="#">Chinese</a></em></p>
-            </div>
-
-            <div class="item">
-                <a href="#">
-                    <h3>Ghee Roast Chicken</h3>
-                </a>
-                <p><em><a href="#">Dinner</a> - <a href="#">Indian</a></em></p>
-            </div>
-
-
-            <div class="item">
-                <a href="#">
-                    <h3>Jerk Chicken</h3>
-                </a>
-                <p><em><a href="#">Lunch</a> - <a href="#">Jamaican</a></em></p>
-            </div>
-
-            <div class="item">
-                <a href="#">
-                    <h3>Thai Red Curry</h3>
-                </a>
-                <p><em><a href="#">Lunch</a> - <a href="#">Dinner</a> - <a href="#">Thai</a></em></p>
-            </div>
-
-        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dish</th>
+                    <th>Cuisine</th>
+                    <th>Mealtime</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="chickenparm.html">Chicken Parmesan</a></td>
+                    <td><em><a href="#">American</a> - <a href="#">Italian</a></em></td>
+                    <td><em><a href="#">Dinner</a></em></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Huevos Rancheros</a></td>
+                    <td><em><a href="#">Mexican</a></em></td>
+                    <td><em><a href="#">Breakfast</a></em></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Scallion Oil Noodles</a></td>
+                    <td><em><a href="#">Shanghai</a> - <a href="#">Vegan</a></em></td>
+                    <td><em><a href="#">Lunch</a></em></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Ghee Roast Chicken</a></td>
+                    <td><em><a href="#">Indian</a></em></td>
+                    <td><em><a href="#">Dinner</a></em></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Jerk Chicken</a></td>
+                    <td><em><a href="#">Caribbean</a> - <a href="#">Jamaican</a></em></td>
+                    <td><em><a href="#">Lunch</a></em></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Thai Red Curry</a></td>
+                    <td><em><a href="#">Thai</a> - <a href="#">Vegan</a></em></td>
+                    <td><em><a href="#">Lunch</a></em></td>
+                </tr>
+            </tbody>
+        </table>
     </main>
 
     <footer>

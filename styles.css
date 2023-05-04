@@ -1,9 +1,11 @@
+/* CSS REQUIREMENT */
+
 body {
   background-color: #1d1c1c;
   color: #fbe0ae;
   padding-left: 200px;
   padding-right: 200px;
-  font-size: 26px;
+  font-size: 1.7em;
 }
 
 /* nav links */
@@ -29,13 +31,15 @@ a {
 }
 
 /* names in header */
+/* ABSOLUTE POSITIONING REQUIREMENT */
+
 .names {
   font-size: 30px;
   text-align: right;
   border: solid 1px #ffc760;
-  margin-left: 1050px;
-  margin-top: -15px;
-  margin-bottom: -17px;
+  position: absolute;
+  top: 1px;
+  left: 1400px;
 }
 
 /* title */
@@ -88,6 +92,8 @@ li {
 }
 
 /* recipe image (click for full-size) */
+/* FLOAT REQUIREMENT */
+
 .image {
   width: 27%;
   float: right;
@@ -107,6 +113,8 @@ li {
 }
 
 /* header and footer */
+
+/* FLEXBOX REQUIREMENT */
 header,
 footer {
   display: flex;
@@ -177,25 +185,7 @@ main {
   margin-bottom: 10px;
 }
 
-/* responsiveness */
-@media screen and (max-width: 768px) {
-  header,
-  footer {
-    flex-direction: column;
-  }
-
-  nav a {
-    margin: 0.5rem;
-  }
-
-  main {
-    padding: 1rem 0;
-  }
-
-  .featured {
-    flex-direction: column;
-  }
-}
+/* GRID REQUIREMENT */
 
 .container3 {
   display: grid;
@@ -308,4 +298,160 @@ button:hover {
 
 .image2container {
   text-align: center;
+}
+
+.product {
+  text-align: center;
+}
+
+.recipes p {
+  font-size: 0.8em;
+}
+
+.recipes a {
+  font-size: 0.9em;
+}
+
+.productsmain p {
+  font-size: 0.8em;
+}
+
+.productsmain a {
+  font-size: 0.9em;
+}
+.privacy ul ::before {
+  all: initial;
+}
+
+.privacy ul,
+li {
+  text-align: justify;
+}
+
+.privacy body {
+  text-align: justify;
+}
+
+.index h5 {
+  margin-top: 5px;
+  font-style: italic;
+  text-align: center;
+}
+
+.aboutp p {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.blog input[type="checkbox"] {
+  display: none;
+}
+
+.blog label:hover {
+  cursor: pointer;
+  background-color: #ffa600;
+}
+
+.blog label {
+  color: #ffc760;
+  margin-top: 25px;
+  font-size: 1.5em;
+  font-weight: bold;
+  border: solid 3px #0a0a0a;
+  border-radius: 12px;
+  background-color: #ffc760;
+  color: #0a0a0a;
+  padding: 0.3em;
+}
+
+.blog div {
+  padding-bottom: 20px;
+  border-bottom: solid 1px #ffc760;
+}
+
+.blog h1 {
+  margin-bottom: -20px;
+}
+
+.blog h2:not(.names) {
+  font-style: italic;
+  margin-bottom: -30px;
+}
+
+.blog h5 {
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 30px;
+}
+th,
+td {
+  text-align: left;
+  padding: 10px;
+}
+th {
+  background-color: #33291a;
+  color: #fbe0ae;
+}
+tbody tr:nth-child(even) {
+  background-color: #0a0a0a;
+}
+
+/* RESPONSIVE REQUIREMENT- FURTHER DEMONSTRATED IN PRESENTATION */
+@media (max-width: 1600px) {
+  header {
+    all: initial;
+  }
+
+  body {
+    font-size: 1em;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  * {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .recipes {
+    font-size: 1.3em;
+  }
+
+  .index h1 {
+    margin-bottom: 20px;
+  }
+
+  .blog h2:not(.names) {
+    margin-bottom: initial;
+  }
+  .blog h1 {
+    margin-bottom: 0px;
+  }
+  body {
+    width: auto;
+    margin: auto;
+    padding: auto;
+  }
+  img {
+    all: initial;
+    width: 100%;
+    height: 10%;
+  }
+
+  .names {
+    all: initial;
+    color: #ffc760;
+  }
+
+  .recipetemplate * {
+    margin: 0;
+    padding: 0;
+  }
 }
