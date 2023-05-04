@@ -217,6 +217,7 @@ main {
 sub {
   font-size: small;
 }
+
 sub::before {
   all: initial;
 }
@@ -396,6 +397,7 @@ th {
   background-color: #33291a;
   color: #fbe0ae;
 }
+
 tbody tr:nth-child(even) {
   background-color: #0a0a0a;
 }
@@ -491,5 +493,10 @@ a:hover {
   .recipetemplate * {
     margin: 0;
     padding: 0;
+  }
+
+  .tagline {
+    text-align: center;
+    margin-top: 0px;
   }
 }
