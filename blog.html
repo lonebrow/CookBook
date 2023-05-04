@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Blog | RecipeRepo</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    label:hover {
+        cursor: pointer;
+        background-color: #ffa600;
+    }
+
+    label {
+        color: #ffc760;
+        margin-top: 25px;
+        font-size: 1.5em;
+        font-weight: bold;
+        border: solid 3px #0a0a0a;
+        border-radius: 12px;
+        background-color: #ffc760;
+        color: #0a0a0a;
+        padding: .3em;
+    }
+
+    div {
+        padding-bottom: 20px;
+        border-bottom: solid 1px #ffc760;
+    }
+
+    h1 {
+        margin-bottom: -20px;
+    }
+
+    h2:not(.names) {
+        font-style: italic;
+        margin-bottom: -30px;
+    }
+
+    h5 {
+        font-style: italic;
+        font-size: 0.8em;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="blog.html"><b>Blog</b></a>
+            <a href="products.html">Products</a>
+            <a href="recipes.html">Recipes</a>
+            <h2 class="names">Jesse Payton & Abhijay Rao</h2>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Blog</h1>
+
+        <div class="blog-post">
+            <h2>Example Blog Post</h2>
+            <h5>John Doe | 12/31/1999</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut finibus elit. Sed at justo condimentum,
+                rhoncus sapien vel, tincidunt tortor. Donec ullamcorper massa vel mi malesuada, sit amet tristique lorem
+                dictum. Nunc non enim ante. Pellentesque blandit urna eget facilisis fermentum. Nulla quis lacinia
+                quam.</p>
+            <a class="readmore" href="#">Read More</a>
+        </div>
+
+        <div class="blog-post">
+            <h2>Post Title</h2>
+            <h5>Author Name | Date</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut finibus elit. Sed at justo condimentum,
+                rhoncus sapien vel, tincidunt tortor. Donec ullamcorper massa vel mi malesuada, sit amet tristique lorem
+                dictum. Nunc non enim ante. Pellentesque blandit urna eget facilisis fermentum. Nulla quis lacinia
+                quam.</p>
+            <a class="readmore" href="#">Read More</a>
+        </div>
+
+        <div class="blog-post">
+            <h2>Post Title</h2>
+            <h5>Author Name | Date</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut finibus elit. Sed at justo condimentum,
+                rhoncus sapien vel, tincidunt tortor. Donec ullamcorper massa vel mi malesuada, sit amet tristique lorem
+                dictum. Nunc non enim ante. Pellentesque blandit urna eget facilisis fermentum. Nulla quis lacinia
+                quam.</p>
+            <a class="readmore" href="#">Read More</a>
+        </div>
+
+        <label for="more-posts-checkbox">More Posts</label>
+        <input type="checkbox" id="more-posts-checkbox">
+
+        <div id="more-posts">
+            <div class="blog-post">
+                <h2>Post Title</h2>
+                <h5>Author Name | Date</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut finibus elit. Sed at justo
+                    condimentum,
+                    rhoncus sapien vel, tincidunt tortor. Donec ullamcorper massa vel mi malesuada, sit amet tristique
+                    lorem
+                    dictum. Nunc non enim ante. Pellentesque blandit urna eget facilisis fermentum. Nulla quis lacinia
+                    quam.</p>
+                <a class="readmore" href="#">Read More</a>
+            </div>
+
+            <div class="blog-post">
+                <h2>Post Title</h2>
+                <h5>Author Name | Date</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut finibus elit. Sed at justo
+                    condimentum,
+                    rhoncus sapien vel, tincidunt tortor. Donec ullamcorper massa vel mi malesuada, sit amet tristique
+                    lorem
+                    dictum. Nunc non enim ante. Pellentesque blandit urna eget facilisis fermentum. Nulla quis lacinia
+                    quam.</p>
+                <a class="readmore" href="#">Read More</a>
+            </div>
+
+            <div class="blog-post">
+                <h2>Post Title</h2>
+                <h5>Author Name | Date</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut finibus elit. Sed at justo
+                    condimentum,
+                    rhoncus sapien vel, tincidunt tortor. Donec ullamcorper massa vel mi malesuada, sit amet tristique
+                    lorem
+                    dictum. Nunc non enim ante. Pellentesque blandit urna eget facilisis fermentum. Nulla quis lacinia
+                    quam.</p>
+                <a class="readmore" href="#">Read More</a>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <nav>
+            <a href="about.html">About Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <p>&copy; 2023 RecipeRepo. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

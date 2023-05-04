@@ -6,32 +6,15 @@ body {
   font-size: 26px;
 }
 
-/* header */
-header {
-  /*aligns with title*/
-  margin-bottom: -60px;
-}
-
 /* nav links */
 a {
   color: #ffc760;
 }
 
-/* general info */
-.info {
-}
-
-/* ingredients */
-.ingredients {
-}
-
-/* directions */
-.directions {
-}
-
-/* notes */
+.ingredients,
+.directions,
 .notes {
-  text-align: center;
+  width: 90%;
 }
 
 /* shared styles (border, etc.) */
@@ -45,11 +28,21 @@ a {
   margin-left: 150px;
 }
 
-/* recipe title */
+/* names in header */
+.names {
+  font-size: 30px;
+  text-align: right;
+  border: solid 1px #ffc760;
+  margin-left: 1050px;
+  margin-top: -15px;
+  margin-bottom: -17px;
+}
+
+/* title */
 h1 {
   text-align: center;
-  border-bottom: solid 1px #fbe0ae;
   color: #ffc760;
+  margin-top: -15px;
 }
 
 /* section heading */
@@ -113,9 +106,206 @@ li {
   font-style: italic;
 }
 
-h2 {
-  text-align: right;
-  border: solid 1px #ffc760;
-  margin-bottom: -95px;
-  margin-left: 1012px;
+/* header and footer */
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #1d1c1c;
+}
+
+header {
+  margin-top: -10px;
+  border-bottom: -20px;
+  border-bottom: solid 1px #fbe0ae;
+}
+
+footer {
+  border-top: 1px solid #fbe0ae;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* navigation */
+nav a {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* main */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+/* featured section */
+.featured {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* featured recipes and products */
+.featured-recipes,
+.featured-products {
+  flex: 1;
+  margin: 1rem;
+}
+
+.featured-recipes h2,
+.featured-products h2 {
+  text-align: left;
+  border-bottom: solid 1px #fbe0ae;
+  margin-top: 30px;
+}
+
+.featured-recipes ul,
+.featured-products ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+.featured-recipes li,
+.featured-products li {
+  margin-bottom: 10px;
+}
+
+/* responsiveness */
+@media screen and (max-width: 768px) {
+  header,
+  footer {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 0.5rem;
+  }
+
+  main {
+    padding: 1rem 0;
+  }
+
+  .featured {
+    flex-direction: column;
+  }
+}
+
+.container3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin: 20px;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin: 20px;
+}
+
+.item {
+  background-color: #0a0a0a;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+.item h3 {
+  margin-top: 0;
+}
+
+.productimage {
+  width: 30%;
+}
+
+sub {
+  font-size: small;
+}
+sub::before {
+  all: initial;
+}
+
+.contact-container {
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  width: 60%;
+  background-color: #0a0a0a;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #1d1c1c;
+  color: #ffc760;
+}
+
+.contact-form input[type="submit"],
+button {
+  width: auto;
+  background-color: #ffc760;
+  color: #1d1c1c;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.contact-form input[type="submit"],
+button:hover {
+  background-color: #ffa600;
+}
+
+#more-posts {
+  display: none;
+}
+
+#more-posts-checkbox:checked ~ #more-posts {
+  display: block;
+}
+
+.readmore {
+  font-size: 0.7em;
+}
+
+.subheader1 {
+  font-size: 48px;
+  color: #fc7e00;
+}
+
+.subheader2 {
+  font-size: 36px;
+  font-style: italic;
+}
+
+.item:hover {
+  background-color: #33291a;
+}
+
+.image2 {
+  width: 90%;
+  height: 550px;
+  border-radius: 3px;
+  margin-top: -10px;
+  overflow: hidden;
+}
+
+.image2container {
+  text-align: center;
 }
